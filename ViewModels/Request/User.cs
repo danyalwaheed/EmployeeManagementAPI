@@ -17,7 +17,5 @@ namespace EmployeeManagementAPI.ViewModels.Request
         public int CompanyId { get; set; }
         public int BranchId { get; set; }
 
-
-
     }
 }

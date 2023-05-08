@@ -75,6 +75,7 @@ namespace EmployeeManagementAPI.Repository
 						emp.EmployeeName,
 						emp.DepartmentId,
 						emp.EmployeeEmail,
+						emp.GrossSalary,
 						emp.NationalityId,
 						emp.IsActive
 					}
@@ -99,6 +100,7 @@ namespace EmployeeManagementAPI.Repository
 					EmployeeID = r.data.dataN.EmployeeId,
 					EmployeesName = r.data.dataN.EmployeeName,
 					DepartmentID = r.data.dataN.DepartmentId,
+					GrossSalary=r.data.dataN.GrossSalary,
 					EmployeesEmail = r.data.dataN.EmployeeEmail,
 					Nationality = r.data.country.CountryName,
 					ISActive = r.data.dataN.IsActive,
@@ -120,6 +122,7 @@ namespace EmployeeManagementAPI.Repository
 						EmployeeName = r.data.EmployeesName,
 						DepartmentName = r.dept.DepartmentName,
 						EmployeeEmail = r.data.EmployeesEmail,
+						GrossSalary=r.data.GrossSalary,
 						DepartmentId = r.dept.DepartmentId,
 						Nationality = r.data.Nationality,
 						Status = r.data.ISActive == true ? "Active" : "inActive"

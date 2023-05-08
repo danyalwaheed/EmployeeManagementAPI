@@ -94,7 +94,7 @@ namespace EmployeeManagementAPI.Repository
 
 		}
 
-		public async Task<IList<EmpDocResponseVM>> GetEmployeeDocumentsAsync(int employeeId)
+		public async Task<IList<EmployeeDocumentResponseVM>> GetEmployeeDocumentsAsync(int employeeId)
 		{
 			var query = _db.TblEmployeeDocument
 				.AsNoTracking()
@@ -118,7 +118,7 @@ namespace EmployeeManagementAPI.Repository
 						data.documentTypeName,
 						departmentName = dept.DepartmentName
 					}
-				).Select(result => new EmpDocResponseVM
+				).Select(result => new EmployeeDocumentResponseVM
 				{
 					EmployeeDocumentID = result.doc.EmployeeDocumentId,
 					DepartmentName = result.departmentName,

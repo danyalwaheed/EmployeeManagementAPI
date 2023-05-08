@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmployeeManagementAPI.ViewModels.Responses
+namespace EmployeeManagementAPI.ViewModels.Response
 {
     public class TotalDocumentsResponse
-
     {
         public int EmployeeId { get; set; }
         //  public int DepartmentId { get; set; }

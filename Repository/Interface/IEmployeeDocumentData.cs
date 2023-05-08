@@ -15,7 +15,7 @@ namespace EmployeeManagementAPI.Repository.Interface
 		Task<IList<TblDocumentCategory>> GetAllDocumentCategoriesAsync();
 		//Task<FileDownloadResult> GetDocumentAsync(int documentId);
 		Task<FileStreamResult> GetEmployeeDocumentById(int id);
-		Task<IList<EmpDocResponseVM>> GetEmployeeDocumentsAsync(int employeeId);
+		Task<IList<EmployeeDocumentResponseVM>> GetEmployeeDocumentsAsync(int employeeId);
 
 	}
 }

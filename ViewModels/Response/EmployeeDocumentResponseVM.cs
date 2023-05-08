@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmployeeManagementAPI.ViewModels.Responses
+namespace EmployeeManagementAPI.ViewModels.Response
 {
     public class EmployeeDocumentResponseVM
     {
@@ -12,6 +12,5 @@ namespace EmployeeManagementAPI.ViewModels.Responses
         public string DocumentTypeName { get; set; }
         public string DocumentName { get; set; }
         public string Remarks { get; set; }
-    
     }
 }

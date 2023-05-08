@@ -80,7 +80,7 @@ namespace EmployeeManagementAPI.Controllers
 		/// <response code="404">Records not found.</response>
 		[HttpGet]
 		[ProducesResponseType(StatusCodes.Status200OK)]
-		public async Task<ActionResult<DocumentCategoryResponse>> GetAllDocumentCategories()
+		public async Task<ActionResult<DocumentcategoryResponse>> GetAllDocumentCategories()
 		{
 			var result = await _documentRepo.GetAllDocumentCategoriesAsync();
 			return Ok(result);

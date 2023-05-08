@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmployeeManagementAPI.ViewModels.Responses
+namespace EmployeeManagementAPI.ViewModels.Response
 {
-    public class BranchInfo
+    public class BranchResponse
     {
         public int BranchId { get; set; }
         public string BranchName { get; set; }

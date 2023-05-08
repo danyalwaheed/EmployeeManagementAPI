@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmployeeManagementAPI.ViewModels.Responses
+namespace EmployeeManagementAPI.ViewModels.Response
 {
-    public class CompanyInfo
+    public class CompanyResponse
     {
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }

@@ -65,7 +65,7 @@ namespace EmployeeManagementAPI.Controllers
 		[HttpGet("{employeeId}")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		[ProducesResponseType(StatusCodes.Status400BadRequest)]
-		public async Task<ActionResult<EmpDocResponseVM>> GetEmployeeDocuments(int employeeId)
+		public async Task<ActionResult<EmployeeDocumentResponseVM>> GetEmployeeDocuments(int employeeId)
 		{
 			await ValidateEmployee(employeeId);
 			var result = await _documentRepo.GetEmployeeDocumentsAsync(employeeId);

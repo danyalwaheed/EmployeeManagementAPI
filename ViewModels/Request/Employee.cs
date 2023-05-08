@@ -1,12 +1,11 @@
-﻿
-using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace EmployeeManagementAPI.ViewModels.Request
 {
-    /// <summary>
-    /// Employee creation model
-    /// </summary>
     public class EmployeeCreateVM
     {
         [Required]
@@ -15,7 +14,7 @@ namespace EmployeeManagementAPI.ViewModels.Request
         [Required]
         public string EmployeeEmail { get; set; }
         [Required]
-        public decimal GrossSalary { get; set; }
+        public int GrossSalary { get; set; }
         [Required]
         public int DepartmentId { get; set; }
         [Required]
@@ -24,7 +23,7 @@ namespace EmployeeManagementAPI.ViewModels.Request
         public string PhotoPath { get; set; }
         [Required]
         public int BranchId { get; set; }
-       // public IFormFile Photo { get; set; }
+        // public IFormFile Photo { get; set; }
     }
 
     public class EmployeeUpdateVM : EmployeeCreateVM
@@ -32,6 +31,4 @@ namespace EmployeeManagementAPI.ViewModels.Request
         [Required]
         public int EmployeeId { get; set; }
     }
-
-   
 }
